@@ -1,6 +1,6 @@
 # Cause Commune
 
-Listen to Cause Commune live and in podcast.
+Listen to Cause Commune live and in podcast. Fork of [https://github.com/PierreBresson/Thinkerview](https://github.com/PierreBresson/Thinkerview)
 
 ## Installation
 
