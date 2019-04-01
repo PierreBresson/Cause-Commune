@@ -39,7 +39,7 @@ export default (offlineReducer = (state = initialState, action) => {
         if (!findPodcast(state.data, action.podcast.id)) {
           return {
             ...state,
-            data: [{ ...action.podcast, progress: "0" }, ...state.data]
+            data: [{ ...action.podcast, progress: 0 }, ...state.data]
           };
         } else {
           return { ...state };
@@ -47,7 +47,7 @@ export default (offlineReducer = (state = initialState, action) => {
       } else {
         return {
           ...state,
-          data: [{ ...action.podcast, progress: "0" }]
+          data: [{ ...action.podcast, progress: 0 }]
         };
       }
     case DELETE_PODCAST_OFFLINE:

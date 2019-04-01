@@ -26,7 +26,9 @@ class CategoryModal extends React.Component {
   }
 
   renderItem = (item, index) => {
-    if (item.id === config.interview_category_id) return null;
+    if (item.id === config.interview_category_id) {
+      return null;
+    }
     return (
       <CategoryItem
         item={item}

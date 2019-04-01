@@ -10,10 +10,13 @@ export default class CategoryItem extends React.Component {
 
   render() {
     let { item, onPress, style } = this.props;
-    let { name, id } = item;
+    let { name } = item;
 
-    if (!name || id == 1) return null;
+    if (!name) return null;
 
+    if (item.id === config.interview_category_id) {
+      name = config.strings.categoryModal.allCategories;
+    }
     return (
       <ReactNative.TouchableOpacity
         style={[styles.container, style]}

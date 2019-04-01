@@ -3,7 +3,7 @@ import { FlatList, Text, View, ScrollView, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import RNBackgroundDownloader from "react-native-background-downloader";
 import { selectOfflinePodcast, updatePodcast } from "../../actions";
-import VideoItem from "../../components/listItem/videoItem";
+import PodcastItemOffline from "../../components/listItem/podcastItemOffline";
 import config from "../../config";
 
 class OfflineScreen extends React.Component {
@@ -56,7 +56,7 @@ class OfflineScreen extends React.Component {
       data={this.props.offline.data}
       keyExtractor={(item, index) => index.toString()}
       renderItem={({ item }) => (
-        <VideoItem
+        <PodcastItemOffline
           key={item.id}
           item={item}
           onPress={() => {

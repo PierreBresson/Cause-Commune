@@ -5,13 +5,14 @@ const colors = {
   backgroundColor: "#fef7f9",
   blackTorn: "#333333",
   silverTwo: "#c8c7cc",
-  thinkerGreen: "#45be84",
+  thinkerGreen: "#E63059",
   socialMedia: {
     facebook: "#3b5999",
     twitter: "#55acee",
     youtube: "#cd201f",
     mastodon: "#469CDA",
-    peertube: "#F07436"
+    peertube: "#F07436",
+    instagram: "#c32aa3"
   }
 };
 

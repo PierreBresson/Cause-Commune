@@ -194,14 +194,10 @@ class ArticleScreen extends React.Component {
             onPressRight={() => this.props.shareSocialAction()}
           />
           <View style={[config.styles.container, { height: "100%" }]}>
-            {this.renderVideoAndroid(img_url, video_id)}
-            {this.renderVideoIOS(video_id)}
-
             {this.renderAudio(audio_link, img_url, title)}
             {this.renderOffLine()}
 
             <Text style={styles.header}>{_.capitalize(title)}</Text>
-            <Text style={styles.body}>{_.capitalize(body)}</Text>
           </View>
         </ScrollView>
         <ShareSocial />
@@ -212,11 +208,11 @@ class ArticleScreen extends React.Component {
 
 const styles = StyleSheet.create({
   img: {
-    height: 100,
-    width: 200
+    height: 250,
+    width: 250
   },
   header: {
-    paddingTop: Platform.OS === "ios" ? 20 : 0,
+    marginTop: 20,
     fontSize: 20,
     color: config.colors.black,
     fontFamily: config.fonts.black

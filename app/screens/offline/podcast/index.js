@@ -130,7 +130,7 @@ class OfflinePodcastScreen extends React.Component {
     return (
       <Image
         style={styles.img}
-        resizeMode="cover"
+        resizeMode="contain"
         source={{ uri: image_offline ? image_offline : img_url }}
       />
     );

@@ -1,11 +1,10 @@
 const urls = {
   api: {
-    podcast_download: "https://thinkerview.com/podcast-download/",
-    base_url: "https://thinkerview.com/wp-json/wp/v2/",
-    all_categories: "categories?per_page=100",
-    category: "&categories=",
+    base_url: "https://cause-commune.fm/wp-json/wp/v2/",
+    all_series: "series?per_page=50",
+    series: "&series=",
     per_page: "&per_page=",
-    page: "posts?page="
+    page: "podcast?page="
   },
   links: {
     author: {
@@ -13,14 +12,12 @@ const urls = {
       website: "http://pierrebresson.com",
       github: "https://github.com/PierreBresson"
     },
-    thinkerview: {
-      facebook: "https://facebook.com/Thinkerview",
-      twitter: "https://twitter.com/Thinker_View",
-      youtube: "https://youtube.com/Thinkerview",
-      website: "https://thinkerview.com",
-      tipeee: "https://www.tipeee.com/thinkerview",
-      mastodon: "https://mamot.fr/@thinkerview",
-      peertube: "https://thinkerview.video/"
+    cause_commune: {
+      facebook: "https://www.facebook.com/causecommune93.1/",
+      twitter: "https://twitter.com/_CauseCommune_",
+      instagram: "https://www.instagram.com/causecommune93.1/",
+      website: "https://cause-commune.fm/",
+      don: "https://cause-commune.fm/faire-un-don/"
     },
     licence: {
       creative_commons: "https://creativecommons.org/licenses/by-nc-sa/4.0/"

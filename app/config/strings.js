@@ -10,23 +10,19 @@ const strings = {
     copyLink: "Copier le lien"
   },
   homeScreen: {
-    endOfList: "The end!",
-    check_website_message: "Peut être que le site Thinkerview ne répond plus.",
-    check_website_button: "Vérifier état du site"
+    endOfList: "The end!"
   },
   offlineScreen: {
     title: "Podcasts hors-ligne",
-    nothingToShow: "Télécharger un podcast pour qu'il s'affiche ici."
+    nothingToShow: "Enregistrer une émission et elle s'affichera ici."
   },
   aboutScreen: {
     about: "À propos",
     aboutAuthor:
-      "Cette application a été conçu par Pierre Bresson, bénévolement. N'hésitez pas à me faire parvenir vos bugs et la procédure pour les reproduire, de façon civilisée. Si l'application n'arrive pas à charger les interviews, c'est peut-être que le site de Thinkerview ne marche pas et dans ce cas je ne peux malheureusement rien faire.",
-    thinkerview: "Thinkerview",
-    thinkerviewDescription:
-      "ThinkerView est un groupe indépendant issu d'internet, très diffèrent de la plup" +
-      "art des think-tanks qui sont inféodés à des partis politiques ou des intérêts pr" +
-      "ivés.",
+      "Cette application a été conçu par Pierre Bresson, bénévolement. N'hésitez pas à me faire parvenir vos bugs et la procédure pour les reproduire, de façon civilisée. Si l'application n'arrive pas à charger les interviews, c'est peut-être que le site de Cause Commune ne marche et dans ce cas je ne peux malheureusement rien faire.",
+    cause_commune: "Cause Commune - 93.1 FM",
+    cause_commune_description:
+      "Cause Commune rassemble dans sa grille de programmes les voix pour l’instant disparates des chercheurs et des inventeurs de solutions propres à relever les défis écologiques, techniques, sociaux et économiques du monde d’aujourd’hui. Pour ce faire, sont notamment invités à la rejoindre tous les acteurs du logiciel libre et du numérique, de la culture libre, de la science et de l’éducation, de l’environnement et de la nature qui oeuvrent pour le maintien et la sauvegarde des Biens Communs et pour une société de la Connaissance fondée sur le partage.",
     licence: "Licence",
     licenceDescription:
       "Les vidéos de Thinkerview sont mises à disposition selon les termes de la Licenc" +
@@ -34,7 +30,8 @@ const strings = {
       "s Mêmes Conditions 4.0 International."
   },
   categoryModal: {
-    header: "Catégories"
+    header: "Émissions",
+    allCategories: "Toutes les émissions"
   },
   articleScreen: {
     playVideo: "Lire la vidéo",
@@ -46,11 +43,18 @@ const strings = {
     noYoutube: "Merci d'installer Youtube pour pouvoir lire la vidéo."
   },
   podcastScreen: {
-    header: "Podcast",
-    title: "Aucun podcast sélectionné"
+    header: "Ecouter en direct",
+    title: "Aucune séléction"
   },
   headerComponent: {
     back: "Retour"
+  },
+  videoItem: {
+    listen: "Ecouter",
+    save: "Enregistrer",
+    alertTitle: "Attention",
+    alertMessage:
+      "Voulez-vous lancer le téléchargement du podcast afin de pouvoir l'écouter en mode hors ligne? Si oui, ne pas interrompre le téléchargement sous peine de voir le téléchargement se bloquer."
   }
 };
 

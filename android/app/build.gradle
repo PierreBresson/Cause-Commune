@@ -104,11 +104,11 @@ android {
     }
     
     defaultConfig {
-        applicationId "com.thinkerview"
+        applicationId "com.cause.commune"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 11
-        versionName "2.1.0"
+        versionCode 1
+        versionName "1.0.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

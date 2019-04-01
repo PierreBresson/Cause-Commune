@@ -1,4 +1,4 @@
-package com.thinkerview;
+package com.cause.commune;
 
 import com.facebook.react.ReactActivity;
 

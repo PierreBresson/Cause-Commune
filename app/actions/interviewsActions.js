@@ -7,7 +7,7 @@ import {
   INTERVIEWS_SCROLL_TO_TOP
 } from "./types";
 import { pathOr } from "ramda";
-import getInterviews from "../services/api/getInterviews";
+import getPodcasts from "../services/api/getPodcasts";
 
 export const gettingInterviews = () => {
   return {
@@ -34,7 +34,7 @@ export const interviewsFetcher = (category_id = 0) => {
 
     if (shouldFetch) {
       dispatch(gettingInterviews());
-      getInterviews(getState().interviews.page, category_id)
+      getPodcasts(getState().interviews.page, category_id)
         .then(res => {
           return dispatch(gettingInterviewsSuccess(res));
         })

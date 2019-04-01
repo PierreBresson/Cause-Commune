@@ -233,12 +233,11 @@ export const deletePodcastOffline = podcast => {
 };
 
 export const updatePodcast = (id, key, value) => {
-  return async (dispatch, getState) => {
+  return (dispatch, getState) =>
     dispatch({
       type: SAVE_PODCAST_OFFLINE_UPDATE,
       podcast: { id: Number(id) },
       key,
       value
     });
-  };
 };

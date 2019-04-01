@@ -13,6 +13,7 @@ const GITHUB = "github";
 const CREATIVE_COMMONS = "creative-commons";
 const MASTODON = "mastodon";
 const PEERTUBE = "video";
+const INSTAGRAM = "instagram";
 
 export default class DisplayNetwork extends React.Component {
   constructor(props) {
@@ -31,6 +32,8 @@ export default class DisplayNetwork extends React.Component {
         return config.colors.socialMedia.mastodon;
       case PEERTUBE:
         return config.colors.socialMedia.peertube;
+      case INSTAGRAM:
+        return config.colors.socialMedia.instagram;
       default:
         return config.colors.blackTorn;
     }
@@ -63,11 +66,12 @@ export default class DisplayNetwork extends React.Component {
   };
 
   render() {
-    let {
+    const {
       facebook_url,
       twitter_url,
       youtube_url,
       website_url,
+      instagram_url,
       paypal_url,
       github_url,
       creative_commons_url,
@@ -80,6 +84,7 @@ export default class DisplayNetwork extends React.Component {
           {this.renderItem(facebook_url, FACEBOOK)}
           {this.renderItem(twitter_url, TWITTER)}
           {this.renderItem(youtube_url, YOUTUBE)}
+          {this.renderItem(instagram_url, INSTAGRAM)}
           {this.renderItem(website_url, LINK)}
           {this.renderItem(paypal_url, PAYPAL)}
           {this.renderItem(github_url, GITHUB)}

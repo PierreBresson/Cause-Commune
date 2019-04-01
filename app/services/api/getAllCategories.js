@@ -2,7 +2,7 @@ import axios from "axios";
 import config from "../../config";
 
 export default (getAllCategories = () => {
-  let url = config.urls.api.base_url + config.urls.api.all_categories;
+  let url = config.urls.api.base_url + config.urls.api.all_series;
   let promiseGetAllCategories = new Promise((resolve, reject) => {
     axios({
       method: "get",

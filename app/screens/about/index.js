@@ -22,28 +22,23 @@ export default class AboutScreen extends React.Component {
 
         <View style={styles.subHeaderView}>
           <Text style={styles.subHeader}>
-            {config.strings.aboutScreen.thinkerview}
+            {config.strings.aboutScreen.cause_commune}
           </Text>
         </View>
 
         <Text style={styles.body}>
-          {config.strings.aboutScreen.thinkerviewDescription}
+          {config.strings.aboutScreen.cause_commune_description}
         </Text>
 
         <DisplayNetwork
-          facebook_url={config.urls.links.thinkerview.facebook}
-          twitter_url={config.urls.links.thinkerview.twitter}
-          youtube_url={config.urls.links.thinkerview.youtube}
-          website_url={config.urls.links.thinkerview.website}
-          paypal_url={config.urls.links.thinkerview.tipeee}
+          facebook_url={config.urls.links.cause_commune.facebook}
+          twitter_url={config.urls.links.cause_commune.twitter}
+          instagram_url={config.urls.links.cause_commune.instagram}
+          website_url={config.urls.links.cause_commune.website}
+          paypal_url={config.urls.links.cause_commune.don}
         />
 
-        <DisplayNetwork
-          mastodon_url={config.urls.links.thinkerview.mastodon}
-          peertube_url={config.urls.links.thinkerview.peertube}
-        />
-
-        <View style={styles.subHeaderView}>
+        {/* <View style={styles.subHeaderView}>
           <Text style={styles.subHeader}>
             {config.strings.aboutScreen.licence}
           </Text>
@@ -55,7 +50,7 @@ export default class AboutScreen extends React.Component {
 
         <DisplayNetwork
           creative_commons_url={config.urls.links.licence.creative_commons}
-        />
+        /> */}
       </ScrollView>
     );
   }

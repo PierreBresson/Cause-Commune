@@ -22,8 +22,7 @@ import {
 } from "../../actions";
 import IconEntypo from "react-native-vector-icons/Entypo";
 import Button from "../../components/button";
-import VideoItem from "../../components/listItem/videoItem";
-import VideoItemFeatured from "../../components/listItem/videoItemFeatured";
+import PodcastItem from "../../components/listItem/podcastItem";
 import CategoryModal from "../../components/categoryModal";
 import config from "../../config";
 
@@ -49,8 +48,8 @@ class HomeScreen extends React.Component {
     const { isFetchingCategories } = this.props.categories;
 
     if (!isFetchingCategories && !isFetchingInterviews) {
-      this.props.interviewsFetcher(this.props.categories.categorySelected.id);
       this.props.categoriesFetcher();
+      this.props.interviewsFetcher(this.props.categories.categorySelected.id);
     }
   };
 
@@ -107,19 +106,9 @@ class HomeScreen extends React.Component {
     return null;
   };
 
-  renderItem = (item, index) => {
-    const VideoComponent = index ? VideoItem : VideoItemFeatured;
-
-    return (
-      <VideoComponent
-        item={item}
-        onPress={() => {
-          this.props.selectArticle(item);
-          this.props.navigation.navigate("Article");
-        }}
-      />
-    );
-  };
+  renderItem = (item, index) => (
+    <PodcastItem item={item} navigation={this.props.navigation} />
+  );
 
   renderFooter = ({ section }) => {
     const { isFetchingInterviews, lastPage } = this.props.interviews;

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { Image, Text, View, StyleSheet } from "react-native";
+import { Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import TrackPlayer from "react-native-track-player";
+import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { updateTrackInfo } from "../../actions";
 import PlayerButton from "../../components/playerButton";
 import ProgressBar from "../../components/progressBar";
 import config from "../../config";
@@ -19,11 +21,35 @@ class PodcastScreen extends Component {
     }
   };
 
-  renderIntro = () => {
+  _listenLive = async () => {
+    TrackPlayer.reset();
+    let info = {
+      title: "Live Cause Commune 93.1",
+      artwork: null
+    };
+    await TrackPlayer.add({
+      id: "live",
+      url: "https://icecast.libre-a-toi.org:8444/voixdulat_mp3",
+      title: "Cause Commune en direct sur 93.1",
+      artist: "Cause Commune",
+      album: "Podcast"
+    });
+    this.props.updateTrackInfo(info);
+    await TrackPlayer.play();
+  };
+
+  renderLive = () => {
     return (
-      <View style={styles.headerView}>
-        <Text style={styles.header}>{config.strings.podcastScreen.header}</Text>
-      </View>
+      <TouchableOpacity style={styles.headerView} onPress={this._listenLive}>
+        <Text style={styles.headerText}>
+          {config.strings.podcastScreen.header}
+        </Text>
+        <IconMaterialCommunityIcons
+          name={"radio-tower"}
+          size={35}
+          color={config.colors.thinkerGreen}
+        />
+      </TouchableOpacity>
     );
   };
 
@@ -67,7 +93,7 @@ class PodcastScreen extends Component {
     let { artwork } = this.props.track;
     return (
       <View style={config.styles.container}>
-        {this.renderIntro()}
+        {this.renderLive()}
         <View style={{ flex: 1 }}>
           <Image
             style={styles.artwork}
@@ -87,12 +113,14 @@ class PodcastScreen extends Component {
 
 const styles = StyleSheet.create({
   headerView: {
+    flexDirection: "row",
     paddingTop: 40,
     paddingBottom: 20,
     alignItems: "center"
   },
-  header: {
+  headerText: {
     fontSize: 30,
+    paddingRight: 10,
     fontFamily: config.fonts.titleFont,
     color: config.colors.black
   },
@@ -128,4 +156,13 @@ function mapStateToProps(state) {
   };
 }
 
-module.exports = connect(mapStateToProps)(PodcastScreen);
+const mapDispatchToProps = dispatch => {
+  return {
+    updateTrackInfo: info => dispatch(updateTrackInfo(info))
+  };
+};
+
+module.exports = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PodcastScreen);

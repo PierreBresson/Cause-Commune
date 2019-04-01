@@ -8,7 +8,7 @@ import {
 
 const initialcategorySelected = {
   id: 0,
-  name: "Toutes les interviews"
+  name: "Toutes les émissions"
 };
 const initialState = {
   isFetchingCategories: false,
