@@ -56,14 +56,14 @@ class PodcastItem extends React.Component {
   };
 
   listenPodcast = async () => {
-    let { item } = this.props;
-    let { title, audio_link, categories } = item;
-    const img_url = this.getImage(categories);
+    let { title, audio_link, categories } = this.props.item;
+    const img_url = this.getImage(categories).replace(" ", "%20");
+    const clean_audio_link = audio_link.replace(/ /g, "%20");
 
     TrackPlayer.reset();
     await TrackPlayer.add({
-      id: audio_link,
-      url: audio_link,
+      id: clean_audio_link,
+      url: clean_audio_link,
       title: title,
       artist: "Cause Commune",
       album: "Podcast",
@@ -72,7 +72,7 @@ class PodcastItem extends React.Component {
     await TrackPlayer.play();
     let info = {
       title: title,
-      url: audio_link,
+      url: clean_audio_link,
       artwork: img_url
     };
     this.props.updateTrackInfo(info);
@@ -111,13 +111,13 @@ class PodcastItem extends React.Component {
           source={{ uri: img_url }}
         />
         <View style={styles.textView}>
-          <Text numberOfLines={3} style={styles.text}>
+          <Text numberOfLines={5} style={styles.text}>
             {_.capitalize(title)}
           </Text>
           <View style={styles.categoriesView}>
             {/* {this.renderCategories(categories)} */}
             {this.renderListen()}
-            {this.renderSave()}
+            {/* {this.renderSave()} */}
           </View>
         </View>
       </View>

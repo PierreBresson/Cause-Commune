@@ -102,43 +102,43 @@ const TabScreens = createBottomTabNavigator(
           )
       }
     },
-    Offline: {
-      screen: createStackNavigator(
-        {
-          Offline: {
-            screen: OfflineScreen
-          },
-          OfflinePodcast: {
-            screen: OfflinePodcastScreen
-          }
-        },
-        {
-          headerMode: "none",
-          header: null,
-          navigationOptions: {
-            header: null
-          }
-        }
-      ),
-      navigationOptions: {
-        tabBarIcon: ({ tintColor, focused }) =>
-          focused ? (
-            <IconEntypo
-              name={"download"}
-              size={28}
-              color={config.colors.thinkerGreen}
-              style={styles.icon}
-            />
-          ) : (
-            <IconEntypo
-              name={"download"}
-              size={28}
-              color={config.colors.blackTorn}
-              style={styles.icon}
-            />
-          )
-      }
-    },
+    // Offline: {
+    //   screen: createStackNavigator(
+    //     {
+    //       Offline: {
+    //         screen: OfflineScreen
+    //       },
+    //       OfflinePodcast: {
+    //         screen: OfflinePodcastScreen
+    //       }
+    //     },
+    //     {
+    //       headerMode: "none",
+    //       header: null,
+    //       navigationOptions: {
+    //         header: null
+    //       }
+    //     }
+    //   ),
+    //   navigationOptions: {
+    //     tabBarIcon: ({ tintColor, focused }) =>
+    //       focused ? (
+    //         <IconEntypo
+    //           name={"download"}
+    //           size={28}
+    //           color={config.colors.thinkerGreen}
+    //           style={styles.icon}
+    //         />
+    //       ) : (
+    //         <IconEntypo
+    //           name={"download"}
+    //           size={28}
+    //           color={config.colors.blackTorn}
+    //           style={styles.icon}
+    //         />
+    //       )
+    //   }
+    // },
     About: {
       screen: AboutScreen,
       navigationOptions: {

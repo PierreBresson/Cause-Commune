@@ -19,7 +19,7 @@ const strings = {
   aboutScreen: {
     about: "À propos",
     aboutAuthor:
-      "Cette application a été conçu par Pierre Bresson, bénévolement. N'hésitez pas à me faire parvenir vos bugs et la procédure pour les reproduire, de façon civilisée. Si l'application n'arrive pas à charger les interviews, c'est peut-être que le site de Cause Commune ne marche et dans ce cas je ne peux malheureusement rien faire.",
+      "Cette application a été conçu par Pierre Bresson, bénévolement. N'hésitez pas à me faire parvenir vos bugs et la procédure pour les reproduire, de façon civilisée.",
     cause_commune: "Cause Commune - 93.1 FM",
     cause_commune_description:
       "Cause Commune rassemble dans sa grille de programmes les voix pour l’instant disparates des chercheurs et des inventeurs de solutions propres à relever les défis écologiques, techniques, sociaux et économiques du monde d’aujourd’hui. Pour ce faire, sont notamment invités à la rejoindre tous les acteurs du logiciel libre et du numérique, de la culture libre, de la science et de l’éducation, de l’environnement et de la nature qui oeuvrent pour le maintien et la sauvegarde des Biens Communs et pour une société de la Connaissance fondée sur le partage.",
