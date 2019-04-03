@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D2A28121D9B038B00D4039D"
+               BlueprintIdentifier = "83CBBA2D1A601D0E00E9B192"
                BuildableName = "libReact.a"
-               BlueprintName = "React-tvOS"
+               BlueprintName = "React"
                ReferencedContainer = "container:../node_modules/react-native/React/React.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "Cause Commune-tvOS.app"
-               BlueprintName = "Cause Commune-tvOS"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "thinkerview.app"
+               BlueprintName = "Cause Commune"
                ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Cause Commune-tvOSTests.xctest"
-               BlueprintName = "Cause Commune-tvOSTests"
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "Cause CommuneTests.xctest"
+               BlueprintName = "Cause CommuneTests"
                ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,9 +60,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Cause Commune-tvOSTests.xctest"
-               BlueprintName = "Cause Commune-tvOSTests"
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "Cause CommuneTests.xctest"
+               BlueprintName = "Cause CommuneTests"
                ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -70,9 +70,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Cause Commune-tvOS.app"
-            BlueprintName = "Cause Commune-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "thinkerview.app"
+            BlueprintName = "Cause Commune"
             ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -93,9 +93,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Cause Commune-tvOS.app"
-            BlueprintName = "Cause Commune-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "thinkerview.app"
+            BlueprintName = "Cause Commune"
             ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -112,9 +112,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Cause Commune-tvOS.app"
-            BlueprintName = "Cause Commune-tvOS"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "thinkerview.app"
+            BlueprintName = "Cause Commune"
             ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

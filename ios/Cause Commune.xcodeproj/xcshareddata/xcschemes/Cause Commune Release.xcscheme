@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
                BuildableName = "thinkerview.app"
-               BlueprintName = "thinkerview"
-               ReferencedContainer = "container:thinkerview.xcodeproj">
+               BlueprintName = "Cause Commune"
+               ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "thinkerviewTests.xctest"
-               BlueprintName = "thinkerviewTests"
-               ReferencedContainer = "container:thinkerview.xcodeproj">
+               BuildableName = "Cause CommuneTests.xctest"
+               BlueprintName = "Cause CommuneTests"
+               ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "thinkerviewTests.xctest"
-               BlueprintName = "thinkerviewTests"
-               ReferencedContainer = "container:thinkerview.xcodeproj">
+               BuildableName = "Cause CommuneTests.xctest"
+               BlueprintName = "Cause CommuneTests"
+               ReferencedContainer = "container:Cause Commune.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,8 +72,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "thinkerview.app"
-            BlueprintName = "thinkerview"
-            ReferencedContainer = "container:thinkerview.xcodeproj">
+            BlueprintName = "Cause Commune"
+            ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "thinkerview.app"
-            BlueprintName = "thinkerview"
-            ReferencedContainer = "container:thinkerview.xcodeproj">
+            BlueprintName = "Cause Commune"
+            ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -114,8 +114,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "thinkerview.app"
-            BlueprintName = "thinkerview"
-            ReferencedContainer = "container:thinkerview.xcodeproj">
+            BlueprintName = "Cause Commune"
+            ReferencedContainer = "container:Cause Commune.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

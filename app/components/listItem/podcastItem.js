@@ -57,25 +57,27 @@ class PodcastItem extends React.Component {
 
   listenPodcast = async () => {
     let { title, audio_link, categories } = this.props.item;
-    const img_url = this.getImage(categories);
+    const img_url = this.getImage(categories).replace(/ /g, "%20");
 
-    TrackPlayer.reset();
-    await TrackPlayer.add({
-      id: audio_link,
-      url: audio_link,
-      title: title,
-      artist: "Cause Commune",
-      album: "Podcast",
-      artwork: img_url
-    });
-    await TrackPlayer.play();
-    let info = {
-      title: title,
-      url: clean_audio_link,
-      artwork: img_url
-    };
-    this.props.updateTrackInfo(info);
-    this.props.navigation.navigate("Podcast");
+    if (audio_link) {
+      TrackPlayer.reset();
+      await TrackPlayer.add({
+        id: audio_link,
+        url: audio_link,
+        title: title,
+        artist: "Cause Commune",
+        album: "Podcast",
+        artwork: img_url
+      });
+      await TrackPlayer.play();
+      let info = {
+        title: title,
+        url: audio_link,
+        artwork: img_url
+      };
+      this.props.updateTrackInfo(info);
+      this.props.navigation.navigate("Podcast");
+    }
   };
 
   renderSave = () => (
