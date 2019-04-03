@@ -57,13 +57,12 @@ class PodcastItem extends React.Component {
 
   listenPodcast = async () => {
     let { title, audio_link, categories } = this.props.item;
-    const img_url = this.getImage(categories).replace(" ", "%20");
-    const clean_audio_link = audio_link.replace(/ /g, "%20");
+    const img_url = this.getImage(categories);
 
     TrackPlayer.reset();
     await TrackPlayer.add({
-      id: clean_audio_link,
-      url: clean_audio_link,
+      id: audio_link,
+      url: audio_link,
       title: title,
       artist: "Cause Commune",
       album: "Podcast",

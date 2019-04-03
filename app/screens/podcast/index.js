@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import TrackPlayer from "react-native-track-player";
+import { pathOr } from "ramda";
 import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { updateTrackInfo } from "../../actions";
 import PlayerButton from "../../components/playerButton";
@@ -24,7 +25,9 @@ class PodcastScreen extends Component {
   _listenLive = async () => {
     TrackPlayer.reset();
     let info = {
-      title: "Live Cause Commune 93.1",
+      title: "Cause Commune en direct sur 93.1",
+      artist: "Cause Commune",
+      isStreaming: true,
       artwork: null
     };
     await TrackPlayer.add({
@@ -90,7 +93,8 @@ class PodcastScreen extends Component {
   };
 
   render() {
-    let { artwork } = this.props.track;
+    const { artwork, isStreaming } = this.props.track;
+
     return (
       <View style={config.styles.container}>
         {this.renderLive()}
@@ -102,7 +106,7 @@ class PodcastScreen extends Component {
           />
           <View style={styles.bottomView}>
             {this.renderInfoPodast()}
-            <ProgressBar />
+            {!isStreaming && <ProgressBar />}
             {this.renderControls()}
           </View>
         </View>

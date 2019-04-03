@@ -25,22 +25,17 @@ class CategoryModal extends React.Component {
     super(props);
   }
 
-  renderItem = (item, index) => {
-    if (item.id === config.interview_category_id) {
-      return null;
-    }
-    return (
-      <CategoryItem
-        item={item}
-        onPress={() => {
-          this.props.selectCategory(item);
-          this.props.categoryModalAction();
-          this.props.resetInterviewsFetcher();
-          this.props.interviewsFetcher(item.id);
-        }}
-      />
-    );
-  };
+  renderItem = (item, index) => (
+    <CategoryItem
+      item={item}
+      onPress={() => {
+        this.props.selectCategory(item);
+        this.props.categoryModalAction();
+        this.props.resetInterviewsFetcher();
+        this.props.interviewsFetcher(item.id);
+      }}
+    />
+  );
 
   renderIntro = () => {
     return (
