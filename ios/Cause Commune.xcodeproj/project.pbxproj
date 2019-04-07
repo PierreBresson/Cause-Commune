@@ -47,6 +47,7 @@
 		5671647CDA55436892EB339D /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4491D78E5DE148EDAEF3DD96 /* Lato-BoldItalic.ttf */; };
 		592D0192E8E0445F8BEE3B50 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43CEC5AF0BDB48349484F070 /* Foundation.ttf */; };
 		5F895B5B47974C589ACEEBB9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C4ACD862F45909529F978 /* Octicons.ttf */; };
+		6B852D1A9CE34A9885E228DA /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DCD125ED7A4C7198A2CD55 /* libFastImage.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		97B988D3FA3340DFADABBA7A /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF536AC79F43D08938DB9D /* FontAwesome5_Brands.ttf */; };
 		9E9040CD2251011100E31047 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9040CC2251010200E31047 /* libRCTYouTube.a */; };
@@ -390,6 +391,13 @@
 			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
 			remoteInfo = RNVectorIcons;
 		};
+		9EAFBA6A225A6C02004ED81D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91E06D84F8BA4D01897E1429 /* FastImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A287971D1DE0C0A60081BDFA;
+			remoteInfo = FastImage;
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -409,6 +417,7 @@
 		00E356EE1AD99517003FC87E /* Cause CommuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cause CommuneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* thinkerviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thinkerviewTests.m; sourceTree = "<group>"; };
+		12DCD125ED7A4C7198A2CD55 /* libFastImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libFastImage.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Cause Commune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cause Commune.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +450,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8C7C4ACD862F45909529F978 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		904C91DE16434739AF5CDD63 /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
+		91E06D84F8BA4D01897E1429 /* FastImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = FastImage.xcodeproj; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; };
 		9A21EDD14EEE42A0BBE8ED21 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		9E9040C72251010200E31047 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
 		9EA7BC882250F938005F4C73 /* thinkerview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thinkerview-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -501,6 +511,7 @@
 				F6E436C3E80F4947BDCE34B1 /* libRNShare.a in Frameworks */,
 				CFE2B26822914117A2576E65 /* libRNTrackPlayer.a in Frameworks */,
 				F5005C93CA644DD799F7D8FB /* libRNVectorIcons.a in Frameworks */,
+				6B852D1A9CE34A9885E228DA /* libFastImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +708,7 @@
 				56E34B9EEE75439CBA9CB5D1 /* RNShare.xcodeproj */,
 				E6C91C6C9F334F59B0612438 /* RNTrackPlayer.xcodeproj */,
 				AA9D16FEB9E545F58F7D706C /* RNVectorIcons.xcodeproj */,
+				91E06D84F8BA4D01897E1429 /* FastImage.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -754,6 +766,7 @@
 				622A362DB135445380F21B46 /* libRNTrackPlayer.a */,
 				B52D632E746A41B69ECF1B83 /* libRNVectorIcons.a */,
 				AC6B62EDDF6A449680479681 /* libRCTYouTube.a */,
+				12DCD125ED7A4C7198A2CD55 /* libFastImage.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -795,6 +808,14 @@
 			isa = PBXGroup;
 			children = (
 				9EA7BC782250F6B2005F4C73 /* libRNBackgroundDownloader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EAFBA67225A6C02004ED81D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EAFBA6B225A6C02004ED81D /* libFastImage.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -957,6 +978,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 9EAFBA67225A6C02004ED81D /* Products */;
+					ProjectRef = 91E06D84F8BA4D01897E1429 /* FastImage.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -1342,6 +1367,13 @@
 			remoteRef = 9EA7BC862250F6B2005F4C73 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9EAFBA6B225A6C02004ED81D /* libFastImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFastImage.a;
+			remoteRef = 9EAFBA6A225A6C02004ED81D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1524,12 +1556,14 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = thinkerviewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1561,12 +1595,14 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = thinkerviewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1600,6 +1636,7 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = thinkerview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1633,6 +1670,7 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = thinkerview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1670,11 +1708,13 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = "thinkerview-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1714,11 +1754,13 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = "thinkerview-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1757,11 +1799,13 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = "thinkerview-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1800,11 +1844,13 @@
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = "thinkerview-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

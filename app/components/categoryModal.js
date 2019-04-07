@@ -8,6 +8,7 @@ import {
   StyleSheet
 } from "react-native";
 import { connect } from "react-redux";
+import { contains } from "ramda";
 import {
   categoryModalAction,
   categoriesFetcher,
@@ -25,17 +26,23 @@ class CategoryModal extends React.Component {
     super(props);
   }
 
-  renderItem = (item, index) => (
-    <CategoryItem
-      item={item}
-      onPress={() => {
-        this.props.selectCategory(item);
-        this.props.categoryModalAction();
-        this.props.resetInterviewsFetcher();
-        this.props.interviewsFetcher(item.id);
-      }}
-    />
-  );
+  renderItem = (item, index) => {
+    if (contains(item.id, config.do_not_show_categories)) {
+      return null;
+    }
+
+    return (
+      <CategoryItem
+        item={item}
+        onPress={() => {
+          this.props.selectCategory(item);
+          this.props.categoryModalAction();
+          this.props.resetInterviewsFetcher();
+          this.props.interviewsFetcher(item.id);
+        }}
+      />
+    );
+  };
 
   renderIntro = () => {
     return (
@@ -79,6 +86,7 @@ class CategoryModal extends React.Component {
       isFetchingCategories,
       all_categories
     } = this.props.categories;
+
     return (
       <Modal
         animationType="slide"

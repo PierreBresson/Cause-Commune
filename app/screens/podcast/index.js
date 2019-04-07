@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Image, Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 import TrackPlayer from "react-native-track-player";
-import { pathOr } from "ramda";
+import FastImage from "react-native-fast-image";
 import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { updateTrackInfo } from "../../actions";
 import PlayerButton from "../../components/playerButton";
@@ -99,7 +99,7 @@ class PodcastScreen extends Component {
       <View style={config.styles.container}>
         {this.renderLive()}
         <View style={{ flex: 1 }}>
-          <Image
+          <FastImage
             style={styles.artwork}
             resizeMode={"contain"}
             source={artwork ? { uri: artwork } : config.images.logo}
@@ -139,6 +139,7 @@ const styles = StyleSheet.create({
   },
   infoPodastView: {
     flex: 1,
+    paddingTop: 4,
     alignItems: "center"
   },
   title: {

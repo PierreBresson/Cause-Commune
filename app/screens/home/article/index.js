@@ -2,15 +2,15 @@ import React from "react";
 import {
   View,
   Text,
-  Image,
   ScrollView,
   TouchableOpacity,
   Platform,
   StyleSheet
 } from "react-native";
-import Header from "../../../components/header";
-import ShareSocial from "../../../components/shareSocial";
 import { connect } from "react-redux";
+import FastImage from "react-native-fast-image";
+import ShareSocial from "../../../components/shareSocial";
+import Header from "../../../components/header";
 import {
   updateTrackInfo,
   shareSocialAction,
@@ -64,7 +64,7 @@ class ArticleScreen extends React.Component {
       if (this.state.youtubeNativePlayer)
         return (
           <View style={{ flex: 1 }}>
-            <Image source={{ uri: img_url }} style={styles.img} />
+            <FastImage source={{ uri: img_url }} style={styles.img} />
             <TouchableOpacity
               style={styles.btn}
               onPress={() => this._playVideo(video_id)}

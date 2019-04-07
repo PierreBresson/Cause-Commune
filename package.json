@@ -15,6 +15,7 @@
     "react-native": "0.59.3",
     "react-native-background-downloader": "2.0.1",
     "react-native-check-app-install": "0.0.4",
+    "react-native-fast-image": "^5.2.0",
     "react-native-fs": "2.13.3",
     "react-native-share": "1.0.23",
     "react-native-slider": "0.11.0",
@@ -30,10 +31,10 @@
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "babel-preset-react-native": "^5",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.5",
     "react-test-renderer": "16.6.3",
-    "babel-preset-react-native": "^5",
     "schedule": "0.5.0"
   },
   "jest": {
