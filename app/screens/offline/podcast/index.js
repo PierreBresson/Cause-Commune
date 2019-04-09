@@ -2,7 +2,6 @@ import React from "react";
 import {
   View,
   Text,
-  Image,
   ScrollView,
   TouchableOpacity,
   Platform,
@@ -128,7 +127,7 @@ class OfflinePodcastScreen extends React.Component {
     let { img_url, image_offline } = this.getOfflinePodcastSelected();
 
     return (
-      <Image
+      <FastImage
         style={styles.img}
         resizeMode="contain"
         source={{ uri: image_offline ? image_offline : img_url }}

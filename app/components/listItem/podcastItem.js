@@ -1,9 +1,10 @@
 import React from "react";
-import { TouchableOpacity, View, Text, Image, StyleSheet } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import IconEntypo from "react-native-vector-icons/Entypo";
 import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { connect } from "react-redux";
 import TrackPlayer from "react-native-track-player";
+import FastImage from "react-native-fast-image";
 import { updateTrackInfo, savePodcastOffline } from "../../actions";
 import LabelCategory from "../labelCategory";
 import config from "../../config";
@@ -106,7 +107,7 @@ class PodcastItem extends React.Component {
 
     return (
       <View style={[styles.container, style]}>
-        <Image
+        <FastImage
           style={styles.img}
           resizeMode="cover"
           source={{ uri: img_url }}

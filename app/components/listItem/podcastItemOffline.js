@@ -1,7 +1,8 @@
 import React from "react";
-import { View, TouchableOpacity, Text, Image, StyleSheet } from "react-native";
+import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { connect } from "react-redux";
+import FastImage from "react-native-fast-image";
 import { updateTrackInfo, savePodcastOffline } from "../../actions";
 import config from "../../config";
 import _ from "lodash";
@@ -44,7 +45,7 @@ class PodcastItemOffline extends React.Component {
 
     return (
       <TouchableOpacity style={[styles.container, style]} onPress={onPress}>
-        <Image
+        <FastImage
           style={styles.img}
           resizeMode="cover"
           source={{ uri: img_url }}

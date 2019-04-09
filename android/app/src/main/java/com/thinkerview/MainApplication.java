@@ -2,6 +2,7 @@ package com.cause.commune;
 
 import android.app.Application;
 
+import com.dylanvann.fastimage.FastImageViewPackage;
 import com.facebook.react.ReactApplication;
 import com.rnfs.RNFSPackage;
 import com.guichaguri.trackplayer.TrackPlayer;
@@ -30,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
+          new FastImageViewPackage(),
           new MainReactPackage(),
           new RNFSPackage(),
           new TrackPlayer(), 

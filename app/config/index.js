@@ -8,6 +8,7 @@ import privateKeys from "./privateKeys";
 
 export default {
   interview_category_id: 0,
+  do_not_show_categories: [214, 183, 228, 188, 237, 179],
   articlesPerPage: "25",
   icons: icons,
   images: images,
