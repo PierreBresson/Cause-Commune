@@ -11,7 +11,6 @@ import cl.json.RNSharePackage;
 import com.eko.RNBackgroundDownloaderPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.rpt.reactnativecheckpackageinstallation.CheckPackageInstallationPackage;
-import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -38,8 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
           new RNBackgroundDownloaderPackage(), 
           new RNSharePackage(),
           new VectorIconsPackage(), 
-          new CheckPackageInstallationPackage(), 
-          new ReactNativeYouTube());
+          new CheckPackageInstallationPackage());
     }
 
     @Override

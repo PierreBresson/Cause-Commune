@@ -16,7 +16,6 @@ import {
   shareSocialAction,
   savePodcastOffline
 } from "../../../actions";
-import YouTube, { YouTubeStandaloneAndroid } from "react-native-youtube";
 import TrackPlayer from "react-native-track-player";
 import IconEntypo from "react-native-vector-icons/Entypo";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -27,78 +26,7 @@ import _ from "lodash";
 class ArticleScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      youtubeNativePlayer: false
-    };
   }
-
-  componentWillMount() {
-    if (Platform.OS === "ios") {
-      this.setState({
-        youtubeNativePlayer: true
-      });
-    } else {
-      AppInstalledChecker.isAppInstalled("youtube").then(isInstalled => {
-        if (isInstalled) {
-          this.setState({
-            youtubeNativePlayer: true
-          });
-        }
-      });
-    }
-  }
-
-  _playVideo = video_id => {
-    YouTubeStandaloneAndroid.playVideo({
-      apiKey: config.privateKeys.youtube_api_token,
-      videoId: video_id,
-      autoplay: true,
-      startTime: 0
-    })
-      .then(() => console.log("Standalone Player Exited"))
-      .catch(errorMessage => console.error(errorMessage));
-  };
-
-  renderVideoAndroid = (img_url, video_id) => {
-    if (Platform.OS === "android")
-      if (this.state.youtubeNativePlayer)
-        return (
-          <View style={{ flex: 1 }}>
-            <FastImage source={{ uri: img_url }} style={styles.img} />
-            <TouchableOpacity
-              style={styles.btn}
-              onPress={() => this._playVideo(video_id)}
-            >
-              <IconEntypo
-                name={"video"}
-                size={40}
-                color={config.colors.thinkerGreen}
-                style={styles.iconShare}
-              />
-              <Text style={styles.btnText}>
-                {config.strings.articleScreen.playVideo}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        );
-  };
-
-  renderVideoIOS = video_id => {
-    if (Platform.OS === "ios")
-      return (
-        <YouTube
-          videoId={video_id}
-          play={false}
-          fullscreen={true}
-          onReady={e => this.setState({ isReady: true })}
-          onChangeState={e => this.setState({ status: e.state })}
-          onChangeQuality={e => this.setState({ quality: e.quality })}
-          onError={e => this.setState({ error: e.error })}
-          style={{ alignSelf: "stretch", height: 220 }}
-          apiKey={config.privateKeys.youtube_api_token}
-        />
-      );
-  };
 
   _playPodcast = async (audio_link, img_url, title) => {
     TrackPlayer.reset();
@@ -180,7 +108,6 @@ class ArticleScreen extends React.Component {
     let {
       title,
       body,
-      video_id,
       img_url,
       audio_link
     } = this.props.article.articleSelected;

@@ -50,10 +50,8 @@
 		6B852D1A9CE34A9885E228DA /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DCD125ED7A4C7198A2CD55 /* libFastImage.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		97B988D3FA3340DFADABBA7A /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF536AC79F43D08938DB9D /* FontAwesome5_Brands.ttf */; };
-		9E9040CD2251011100E31047 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9040CC2251010200E31047 /* libRCTYouTube.a */; };
 		9EA7BC8A2250F939005F4C73 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7BC892250F939005F4C73 /* dummy.swift */; };
 		9EA7BC8C2250FD86005F4C73 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA7BC8B2250FD86005F4C73 /* JavaScriptCore.framework */; };
-		9ED950112251020600AD7E0A /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 9ED94FE42251020600AD7E0A /* YTPlayerView-iframe-player.html */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		AEC6A4BEB6C74ED6B363452B /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE046BEF0DD1488192B1B4D5 /* Gilroy-Light.ttf */; };
 		B4BDF5291D5C4180B347CC53 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EE94BE53CA435191BD5801 /* Lato-HairlineItalic.ttf */; };
@@ -314,13 +312,6 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		9E9040CB2251010200E31047 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9E9040C72251010200E31047 /* RCTYouTube.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8BDB9BC91B4289AE00EF9FEF;
-			remoteInfo = RCTYouTube;
-		};
 		9EA7BC142250F3D5005F4C73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -452,11 +443,9 @@
 		904C91DE16434739AF5CDD63 /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		91E06D84F8BA4D01897E1429 /* FastImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = FastImage.xcodeproj; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; };
 		9A21EDD14EEE42A0BBE8ED21 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		9E9040C72251010200E31047 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
 		9EA7BC882250F938005F4C73 /* thinkerview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thinkerview-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EA7BC892250F939005F4C73 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		9EA7BC8B2250FD86005F4C73 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		9ED94FE42251020600AD7E0A /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "../node_modules/react-native-youtube/assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		A7458D243A3E4118850B19B3 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		A914660E1E264382B49F02C2 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		AA9D16FEB9E545F58F7D706C /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -503,7 +492,6 @@
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
-				9E9040CD2251011100E31047 /* libRCTYouTube.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				00F12E107AF04C50ADB29DF3 /* libRNBackgroundDownloader.a in Frameworks */,
@@ -623,7 +611,6 @@
 		13B07FAE1A68108700A75B9A /* Cause Commune */ = {
 			isa = PBXGroup;
 			children = (
-				9ED94FE42251020600AD7E0A /* YTPlayerView-iframe-player.html */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				9EA7BC892250F939005F4C73 /* dummy.swift */,
@@ -690,7 +677,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				9E9040C72251010200E31047 /* RCTYouTube.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -745,14 +731,6 @@
 				00E356EE1AD99517003FC87E /* Cause CommuneTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Cause Commune-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Cause Commune-tvOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9E9040C82251010200E31047 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9E9040CC2251010200E31047 /* libRCTYouTube.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1027,10 +1005,6 @@
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 				},
 				{
-					ProductGroup = 9E9040C82251010200E31047 /* Products */;
-					ProjectRef = 9E9040C72251010200E31047 /* RCTYouTube.xcodeproj */;
-				},
-				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
@@ -1290,13 +1264,6 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9E9040CC2251010200E31047 /* libRCTYouTube.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTYouTube.a;
-			remoteRef = 9E9040CB2251010200E31047 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		9EA7BC152250F3D5005F4C73 /* libjsi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1400,7 +1367,6 @@
 				1E9101EBAF174440A5F3C60C /* Gilroy-ExtraBold.ttf in Resources */,
 				AEC6A4BEB6C74ED6B363452B /* Gilroy-Light.ttf in Resources */,
 				ECA4EC6AF4354EF8996FDA4E /* Lato-Black.ttf in Resources */,
-				9ED950112251020600AD7E0A /* YTPlayerView-iframe-player.html in Resources */,
 				4989447DC27F428BB63DC20D /* Lato-BlackItalic.ttf in Resources */,
 				30A2471B27CD42C790FA766A /* Lato-Bold.ttf in Resources */,
 				5671647CDA55436892EB339D /* Lato-BoldItalic.ttf in Resources */,
@@ -1555,7 +1521,6 @@
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-track-player/ios/RNTrackPlayer/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/react-native-youtube/**",
 					"$(SRCROOT)/../node_modules/react-native-fast-image/ios/FastImage/**",
 				);
 				INFOPLIST_FILE = thinkerviewTests/Info.plist;
