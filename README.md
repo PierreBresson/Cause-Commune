@@ -1,3 +1,5 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P813IQT)
+
 # Cause Commune
 
 Listen to Cause Commune live and in podcast. Copy of [https://github.com/PierreBresson/Thinkerview](https://github.com/PierreBresson/Thinkerview)
