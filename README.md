@@ -14,6 +14,9 @@ iOS : [App Store](https://itunes.apple.com/us/app/cause-commune/id1458650964?ls=
 
 Android : [Google Play](https://play.google.com/store/apps/details?id=com.cause.commune)
 
+Android Libre : [F-Droid](https://f-droid.org/fr/packages/com.cause.commune/)
+
+
 ## Backend
 
 Thanks to wordpress WP JSON : [here](https://cause-commune.fm/wp-json/wp/v2/)
